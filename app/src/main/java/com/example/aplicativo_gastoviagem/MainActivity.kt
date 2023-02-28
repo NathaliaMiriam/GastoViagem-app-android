@@ -2,13 +2,27 @@ package com.example.aplicativo_gastoviagem
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.aplicativo_gastoviagem.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
+
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        var binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+        binding.buttonCalculate.setOnClickListener(this)
     }
+
+    override fun onClick(view: View) {
+        if (view.id == R.id.button_calculate) {
+            calculate()
+        }
+    }
+    private fun calculate() {
+
+    }
+    fun teste(view: View) {}
 }
