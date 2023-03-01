@@ -71,7 +71,6 @@
         android:textSize="38sp" />
 
     <Button
-        android:onClick="teste"
         android:id="@+id/button_calculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

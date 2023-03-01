@@ -3,6 +3,7 @@ package com.example.aplicativo_gastoviagem
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.example.aplicativo_gastoviagem.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -22,7 +23,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
     private fun calculate() {
-
+        Toast.makeText(this, "Fui clicado!", Toast.LENGTH_SHORT).show()
     }
-    fun teste(view: View) {}
 }
