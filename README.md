@@ -12,7 +12,7 @@ Aplicativo Android, desenvolvido com Kotlin, para efetuar o cálculo de gastos c
 
 ### 📲 Layout:
 
-- tela inicial - sem dados inseridos e sem cálculo efetudado:
+- tela inicial - sem dados inseridos e sem cálculo efetuado:
 <h1>
   <img src="docs/images/image_first.png"  width="300" height="600">
 </h1>
